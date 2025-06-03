@@ -35,14 +35,14 @@ def generate_case_variations(email):
 # /start command
 async def start_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "👋 Welcome to the Email Variation Generator Bot!\n\n"
-        "👉 Use:\n/email your_email@example.com"
+        "👋 You Are Welcome Boss!\n\n"
+        "👉 Use Like This:\n/email your_email@gmail.com"
     )
 
 # /email command starts conversation
 async def email_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not context.args:
-        await update.message.reply_text("⚠️ Usage: /email your_email@example.com")
+        await update.message.reply_text("⚠️ Usage: /email loveguru420@gmail.com")
         return ConversationHandler.END
 
     email = context.args[0]
